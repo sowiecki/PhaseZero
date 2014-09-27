@@ -1,0 +1,101 @@
+#index {
+	margin-top: 12%;
+}
+
+/* Navigation */
+table, .navigation {
+	padding-top: 4%;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20;
+	font-weight: bold;
+	color: #808080;
+}
+a.navigation, a.navigation:visited {
+	text-align: center;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20;
+	font-weight: bold;
+	color: #4c9ddc;
+}
+a.navigation:hover {
+	text-decoration: none;
+	color: #71b1ff;
+}
+
+/* General Table */
+.gtable {
+	background-color: #e1f2fa;
+	padding: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #d9d9d9;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	text-align: left;
+	vertical-align: text-top;
+	box-shadow: 0px 0px 0px 4px #4c9ddc inset;
+}
+
+/* General Table Content */
+.gcontent {
+	padding: 2px;
+	padding-top: 0px;
+	padding-left: 1%;
+	font-size: 14px;
+}
+
+
+/* General Table Horizontal Rule */
+.ghr {
+	margin-left: 0px;
+	background-color: #FFFFFF;
+	border: 2px solid #4c9ddc;
+	margin: 10px 0;
+	width: 100%;
+}
+
+h1 {
+	font-size: 26px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	color: #808080;
+}
+
+.date {
+	font-size: 12px;
+	color: #bfbfbf;
+}
+
+h3 {
+	font-size: 16px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	color: #808080;
+}
+
+h5 {
+	font-size: 14px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	color: #808080;
+}

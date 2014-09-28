@@ -1,11 +1,7 @@
 html {
 	background-color: #00aaff;
 	margin-top: 200px;
-}
-
-td {
-	vertical-align: text-top;
-	display: block;
+	position: static;
 }
 
 #index {
@@ -41,6 +37,8 @@ td {
 	margin: 0 auto;
 	margin-left: auto;
 	margin-right: auto;
+	left: 0;
+	right: 0;
 	text-align: center;
     min-height: 100%;
 	font-size: 12;
@@ -90,7 +88,7 @@ a.navigation:hover {
 /* General Table */
 .gwrap {
     background-color: #ffffff;
-	padding: 2px;
+	padding: 0px;
 	padding-top: 35px;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -98,19 +96,21 @@ a.navigation:hover {
 	border-width: 6px;
 	border-color: #ff9500;
 	margin: 0 auto;
-	margin-top: -40px;
+	margin-top: -60px;
 	margin-left: auto;
 	margin-right: auto;
+	left: 0;
+	right: 0;
 	height: auto;
-	min-height: 740px;
+	min-height: 770px;
 	width: 70%;
 	color: #808080;
 	box-shadow: 0px 0px 0px 6px #cfcfcf inset;
 }
 .gtable {
-	display: block;
+	display: inline;
 	padding: 0px;
-	padding-top: 70px;
+	padding-top: 90px;
 	padding-bottom: 50px;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -129,6 +129,7 @@ a.navigation:hover {
 
 /* General Table Content */
 .gcontent, a.gcontent, a.gcontent:visited{
+	position: fixed;
 	margin: 6px;
 	position: static;
 	text-decoration: none;
@@ -141,7 +142,7 @@ a.navigation:hover {
 	color: #808080;
 	margin-top: 0%;
 	margin-bottom: 0%;
-	padding: 2px;
+	padding: 0px;
 	padding-top: 0px;
 	padding-bottom: 6px;
 	padding-left: 22px;
@@ -154,7 +155,6 @@ a.navigation:hover {
 }
 h1, a.h1, a.h1:visited {
 	text-decoration: none;
-	vertical-align: text-top;
 	font-family: sans-serif;
 	font-weight: bold;
 	text-decoration: none;
@@ -236,6 +236,7 @@ h5, a.h5, a.h5:visited {
 	z-index: 2;
 }
 .footer {
+	clear: both;
 	margin: 0 auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -248,7 +249,7 @@ h5, a.h5, a.h5:visited {
 	padding-right: 0px;
 	padding-bottom: 40px;
 	border-style: solid;
-	border-width: 4px;
+	border-width: 6px;
 	border-radius: 30px;
 	border-color: #ff9500;
 	width: 70%;

@@ -90,7 +90,7 @@ a.navigation:hover {
 /* General Table */
 .gwrap {
     background-color: #ffffff;
-	padding: 0px;
+	padding: 2px;
 	padding-top: 35px;
 	padding-right: 0px;
 	padding-left: 0px;
@@ -105,7 +105,7 @@ a.navigation:hover {
 	min-height: 740px;
 	width: 70%;
 	color: #808080;
-	box-shadow: 0px 0px 0px 4px #4c9ddc inset;
+	box-shadow: 0px 0px 0px 6px #cfcfcf inset;
 }
 .gtable {
 	display: block;
@@ -129,6 +129,7 @@ a.navigation:hover {
 
 /* General Table Content */
 .gcontent, a.gcontent, a.gcontent:visited{
+	margin: 6px;
 	position: static;
 	text-decoration: none;
 	font-family: sans-serif;
@@ -143,7 +144,8 @@ a.navigation:hover {
 	padding: 2px;
 	padding-top: 0px;
 	padding-bottom: 6px;
-	padding-left: 20px;
+	padding-left: 22px;
+	padding-right: 24px;
 	font-size: 14px;
 }
 .hLink {
@@ -159,7 +161,8 @@ h1, a.h1, a.h1:visited {
 	font-size: 26px;
 	padding-top: 0;
 	padding-bottom: auto;
-	padding-left: 5px;
+	padding-left: 8px;
+	padding-right: 12px;
 	margin-top: 0px;
 	margin-bottom: auto;
 	color: #406a80;
@@ -207,7 +210,7 @@ h5, a.h5, a.h5:visited {
 .ghr {
 	margin-left: 0;
 	background-color: #FFFFFF;
-	border: 2px solid #4c9ddc;
+	border: 3px solid #cfcfcf;
 	margin: 0px auto;
 	margin-top: 6px;
 	margin-bottom: 6px;

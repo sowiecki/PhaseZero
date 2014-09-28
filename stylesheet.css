@@ -21,7 +21,7 @@ td {
 }
 
 .header_logo:hover {
-    opacity: 0.5;
+    opacity: 0.9;
     filter: contrast(50); /* For IE8 and earlier */
 }
 
@@ -88,29 +88,40 @@ a.navigation:hover {
 }
 
 /* General Table */
-.gtable {
-	
-	background-color: #ffffff;
+.gwrap {
+    background-color: #ffffff;
 	padding: 0px;
-	padding-top: 70px;
-	padding-bottom: 40px;
+	padding-top: 35px;
 	padding-right: 0px;
+	padding-left: 0px;
 	border-style: solid;
 	border-width: 3px;
 	border-color: #ff9500;
 	margin: 0 auto;
+	margin-top: -35px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 98%;
+	width: 70%;
+	color: #808080;
+	box-shadow: 0px 0px 0px 4px #4c9ddc inset;
+}
+.gtable {
+	display: block;
+	padding: 0px;
+	padding-top: 70px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0 auto;
 	margin-top: -80px;
 	margin-left: auto;
 	margin-right: auto;
-	height: auto;
-	width: 70%;
+	width: 100%;
 	text-align: left;
 	text-decoration: none;
 	font-family: sans-serif;
 	font-size: 20;
 	font-weight: bold;
-	color: #808080;
-	box-shadow: 0px 0px 0px 4px #4c9ddc inset;
 }
 
 /* General Table Content */
@@ -119,6 +130,7 @@ a.navigation:hover {
 	text-decoration: none;
 	font-family: sans-serif;
 	vertical-align: top;
+	text-decoration: none;
 	font-size: 20;
 	font-weight: bold;
 	margin: 0 auto;
@@ -127,19 +139,24 @@ a.navigation:hover {
 	margin-bottom: 0%;
 	padding: 2px;
 	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 1%;
+	padding-bottom: 6px;
+	padding-left: 20px;
 	font-size: 14px;
+}
+.hLink {
+	text-decoration: none;
+	color: #406a80;
 }
 h1, a.h1, a.h1:visited {
 	text-decoration: none;
 	vertical-align: text-top;
 	font-family: sans-serif;
 	font-weight: bold;
+	text-decoration: none;
 	font-size: 26px;
 	padding-top: 0;
 	padding-bottom: auto;
-	padding-left: 10px;
+	padding-left: 5px;
 	margin-top: 0px;
 	margin-bottom: auto;
 	color: #406a80;
@@ -151,6 +168,7 @@ h2, a.h2, a.h2:visited {
 	text-decoration: none;
 	font-family: sans-serif;
 	font-weight: bold;
+	text-decoration: none;
 	font-size: 20px;
 	padding-top: 0;
 	padding-bottom: 0;

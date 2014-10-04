@@ -86,12 +86,34 @@ a.navigation:hover {
 }
 
 /* General Table */
-code {
+code, .code {
 	background-color: #d9d9d9;
 	color: #000000;
+	font-style: Sans-serif, Courier;
+	font-weight: lighter;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	padding-left: 6px;
 	padding-right: 6px;
 }
+/* Tabs for code blocks */
+.tab, blockquote {
+	text-indent:40px;
+	background-color: #d9d9d9;
+	color: #000000;
+	font-style: Sans-serif, Courier;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 .gwrap {
     background-color: #ffffff;
 	padding: 0px;
@@ -166,7 +188,7 @@ h1, a.h1, a.h1:visited {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 26px;
-	padding-top: 0;
+	padding-top: 4;
 	padding-bottom: auto;
 	padding-left: 8px;
 	padding-right: 12px;
@@ -182,8 +204,8 @@ h2, a.h2, a.h2:visited {
 	font-family: sans-serif;
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 20px;
-	padding-top: 0;
+	font-size: 16px;
+	padding-top: 4;
 	padding-bottom: 0;
 	padding-left: 10px;
 	margin-bottom: 0px;

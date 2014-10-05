@@ -15,6 +15,7 @@ html {
     transition-property: opacity;
     transition-duration: 0.5s;
 }
+
 .header_logo:hover {
     opacity: 0.7;
     filter: contrast(50); /* For IE8 and earlier */
@@ -26,36 +27,57 @@ html {
     transition-property: opacity;
     transition-duration: 0.5s;
 }
+
 .icon:hover {
     opacity: 0.7;
     filter: contrast(50); /* For IE8 and earlier */
 }
 
 /* Header */
-header {
+.headerWrap {
+	text-align: center;
 	position: fixed;
 	margin: 0 auto;
+	margin-top: 0px;
+	left: 0px;
+	top: -30px;
+	height: 60px;
+	width: 100%;
+	z-index: 2;
+}
+header {
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	left: 0;
 	right: 0;
-	top: -44px;
-	z-index: 2;
 	text-align: center;
+    min-height: 100%;
 	font-size: 12;
 	background-color: #e1f2fa;
+	padding: 0 0 0 0;
 	width: 70%;
 	height: 220px;
-	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-family: Impact, sans-serif;
-	font-size: 34;
+	font-family: sans-serif;
+	font-size: 20;
 	color: #ff9500;
 	border-radius: 30px;
-	border: 6px solid #ff9500;
-	box-shadow: 0 0 0 6px #cfcfcf inset;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #ff9500;
+	box-shadow: 0px 0px 0px 6px #cfcfcf inset;
 }
 
 /* Navigation */
+.navigation {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 30;
+	color: #ffd400;
+}
 a.navigation, a.navigation:visited {
 	text-align: center;
 	text-decoration: none;
@@ -72,13 +94,18 @@ a.navigation:hover {
 	color: #ff9500;
 }
 
-/* General Styling on Content */
+/* General Table */
 code, .code {
 	background-color: #d9d9d9;
 	color: #000000;
 	font-weight: lighter;
-	margin: 0;
-	padding-top: 0 6px 0 6px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 /* Tabs for code blocks */
 .tab, blockquote {
@@ -86,47 +113,76 @@ code, .code {
 	background-color: #d9d9d9;
 	color: #000000;
 	font-weight: lighter;
-	margin: 0;
-	padding-top: 0 0 0 0;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-/* This positions all the content between the header and footer */
 .gwrap {
-	margin: 0 auto auto;
-	position: absolute;
+    background-color: #ffffff;
+	padding: 30px 0px 0px 0px;
+	margin: -60px 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	left: 0;
 	right: 0;
-	width: 70%;
-}
-/* This controls the styling between the header and the footer */
-.backing {
-	background-color: #ffffff;
-	padding: 50px 0 0 0;
-	margin: -60px auto auto;
-	position: fixed;
-	left: 0;
-	right: 0;
-	width: 70%;
+	min-height: 100%;
+	height: auto !important;
 	height: 100%;
+	width: 70%;
 	color: #808080;
-	border: 6px solid #ff9500;
-	box-shadow: 0 0 0 6px #cfcfcf inset;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #ff9500;
+	box-shadow: 0px 0px 0px 6px #cfcfcf inset;
+}
+.push {
+	height: 220px;
+}
+.gtable {
+	display: inline;
+	padding: 0px;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0 auto;
+	margin-top: -80px;
+	margin-bottom: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20;
+	font-weight: bold;
 }
 
 /* General Table Content */
 .gcontent, a.gcontent, a.gcontent:visited{
+	position: fixed;
 	margin: 6px;
 	position: static;
 	text-decoration: none;
 	font-family: sans-serif;
 	vertical-align: top;
 	text-decoration: none;
+	font-size: 20;
 	font-weight: bold;
 	margin: 0 auto;
 	color: #808080;
 	margin-top: 0%;
 	margin-bottom: 0%;
-	padding: 0 6px 22px 24px;
+	padding: 0px 6px 22px 24px;
 	font-size: 14px;
 }
 .hLink {
@@ -174,7 +230,10 @@ h3 {
 h5, a.h5, a.h5:visited {
 	text-decoration: none;
 	font-size: 14px;
-	padding: 0 0 0 10px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
 	margin: 0;
 	margin-bottom: 0;
 	color: #808080;
@@ -210,20 +269,20 @@ h5, a.h5, a.h5:visited {
 	z-index: 2;
 }
 footer {
-	z-index: 2;
 	clear: both;
-	text-align: center;
-	position: fixed;
 	margin: 0 auto;
-	left: 0;
-	right: 0;
-	bottom: -40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    min-height: 100%;
 	font-size: 12;
 	background-color: #e1f2fa;
-	padding: 8px 0 16px 0;
+	padding: 10px 0 26px 0;
 	width: 70%;
-	height: 50px;
+	height: 4em;
 	border-radius: 30px;
-	border: 6px solid #ff9500;
-	box-shadow: 0 0 0 6px #cfcfcf inset;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #ff9500;
+	box-shadow: 0px 0px 0px 6px #cfcfcf inset;
 }

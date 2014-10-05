@@ -31,7 +31,6 @@ html {
     filter: contrast(50); /* For IE8 and earlier */
 }
 
-/* Header */
 header {
 	position: fixed;
 	margin: 0 auto;
@@ -55,7 +54,7 @@ header {
 	box-shadow: 0 0 0 6px #cfcfcf inset;
 }
 
-/* Navigation */
+/* Navigation within the header */
 a.navigation, a.navigation:visited {
 	text-align: center;
 	text-decoration: none;
@@ -98,7 +97,7 @@ code, .code {
 	right: 0;
 	width: 70%;
 }
-/* This controls the styling between the header and the footer */
+/* This controls the styling of the entire page between the header and the footer */
 .backing {
 	background-color: #ffffff;
 	margin: -60px auto auto;
@@ -112,7 +111,7 @@ code, .code {
 	box-shadow: 0 0 0 6px #cfcfcf inset;
 }
 
-/* General Table Content */
+/* General content styling */
 .gcontent, a.gcontent, a.gcontent:visited{
 	text-decoration: none;
 	font-family: sans-serif;
@@ -123,7 +122,7 @@ code, .code {
 	color: #808080;
 	margin-top: 0%;
 	margin-bottom: 0%;
-	padding: 0 6px 22px 24px;
+	padding: 6px 6px 22px 24px;
 	font-size: 14px;
 }
 .hLink {
@@ -136,9 +135,9 @@ h1, a.h1, a.h1:visited {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 26px;
-	padding: 0px 4px 12px 12px;
-	margin-top: 0px;
-	margin-bottom: auto;
+	padding: 0 4px 0 12px;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #406a80;
 }
 a.h1:hover {
@@ -174,7 +173,7 @@ h5, a.h5, a.h5:visited {
 	color: #808080;
 }
 
-/* General Table Horizontal Rule */
+/* General horizontal rule */
 .ghr {
 	margin-left: 0;
 	background-color: #FFFFFF;
@@ -188,21 +187,14 @@ h5, a.h5, a.h5:visited {
 }
 
 .date {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration: none;
 	font-size: 12px;
 	color: #bfbfbf;
 }
 
-/* Footer */
-.footerWrap {
-	text-align: center;
-	position: fixed;
-	margin: 0 auto;
-	margin-bottom: 14px;
-	left: 0px;
-	bottom: -60px;
-	width: 100%;
-	z-index: 2;
-}
 footer {
 	z-index: 2;
 	clear: both;

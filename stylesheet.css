@@ -92,7 +92,7 @@ code, .code {
 
 /* This positions all the content between the header and footer */
 .gwrap {
-	margin: 0 auto auto;
+	margin: -12px auto auto;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -101,7 +101,6 @@ code, .code {
 /* This controls the styling between the header and the footer */
 .backing {
 	background-color: #ffffff;
-	padding: 50px 0 0 0;
 	margin: -60px auto auto;
 	position: fixed;
 	left: 0;
@@ -115,8 +114,6 @@ code, .code {
 
 /* General Table Content */
 .gcontent, a.gcontent, a.gcontent:visited{
-	margin: 6px;
-	position: static;
 	text-decoration: none;
 	font-family: sans-serif;
 	vertical-align: top;
@@ -139,7 +136,7 @@ h1, a.h1, a.h1:visited {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 26px;
-	padding: 4px 12px 12px 12px;
+	padding: 0px 4px 12px 12px;
 	margin-top: 0px;
 	margin-bottom: auto;
 	color: #406a80;
@@ -153,10 +150,7 @@ h2, a.h2, a.h2:visited {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 16px;
-	padding-top: 4;
-	padding-bottom: 0;
-	padding-left: 10px;
-	margin-bottom: 0px;
+	padding: 0 0 0 10px;
 	color: #d9d9d9;
 }
 a.h2:hover {

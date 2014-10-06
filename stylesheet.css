@@ -92,6 +92,7 @@ code, .code {
 /* This positions all the content between the header and footer */
 .gwrap {
 	margin: -12px auto auto;
+	padding: 0 0 20px 0;
 	position: absolute;
 	left: 0;
 	right: 0;

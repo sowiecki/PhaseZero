@@ -40,7 +40,7 @@ header {
 	z-index: 2;
 	text-align: center;
 	font-size: 12;
-	background-color: #e1f2fa;
+	background-color: #13171a;
 	width: 70%;
 	height: 220px;
 	text-align: center;
@@ -49,6 +49,7 @@ header {
 	font-family: Impact, sans-serif;
 	font-size: 34;
 	color: #ff9500;
+	background: url(images/header_background.png);
 	border-radius: 30px;
 	border: 6px solid #ff9500;
 	box-shadow: 0 0 0 6px #cfcfcf inset;
@@ -206,7 +207,8 @@ footer {
 	right: 0;
 	bottom: -40px;
 	font-size: 12;
-	background-color: #e1f2fa;
+	background-color: #13171a;
+	background: url(images/footer_background.png);
 	padding: 8px 0 16px 0;
 	width: 70%;
 	height: 50px;

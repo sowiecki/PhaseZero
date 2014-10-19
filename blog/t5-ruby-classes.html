@@ -19,8 +19,8 @@
 			<p>Ruby has many built-in classes, but the language's real power lies in allowing the programmer to construct their own classes or even modify pre-existing classes.</p>
 			<p>The proper syntax for defining a class is:</p>
 			<p><div class="code"><code>def Class<br><br>end</code></div></p>
-			<p>Within the class, we can construct different methods to perform different functions when they are called upon. Take, for example, a class used to verify whether a credit card number is valid or not.</p>
-			<p>The actual algorithm to verify the number would be one method, but we would also want to take the user's input and make sure it's in a format usable to the program. For this, we would use the <code>initialize</code> method. The <code>initialize</code> method will run every time the class object is called. For our credit card program, our initialize method will look like this:</p>
+			<p>Within the class, we can construct different methods to perform different functions when they are called upon. Take, for example, a class used to verify whether a credit card number is valid or not. In this case, our class would represent the steps a person would take to calculate the validity of a credit card number.</p>
+			<p>The actual algorithm to verify the number would be one method, but we would also want to take the user's input and make sure it's in a format usable to the program. For this, we would use the <code>initialize</code> method. The <code>initialize</code> method will run every time the class object is called. <b>(Spoilers for a week 5 challenge ahead!)</b> For our credit card program, our initialize method will look like this:</p>
 			<p><div class="code"><code>
 										def initialize(card_num)
 											<p class="tab">@card_num = card_num.to_s.split('').map { |x| x.to_i } # Turn each digit into element of an array.

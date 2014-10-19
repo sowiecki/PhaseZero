@@ -27,7 +27,7 @@
 											<p class="tab">raise ArgumentError.new("Must 16 digits!") if @card_num.length != 16
 										<br>end
 			</p></code></div>
-			<p>Each time a card number (a single integer with 16 digits) is called as an argument for <code>CreditCard</code>, it is run through logic to convert each digit into a separate integer within an array. If an integer with more or less than 16 digits is passed, an argument is raised.</p>
+			<p>Each time a card number (a single integer with 16 digits) is called as an argument for <code>CreditCard</code>, it is run through logic to convert each digit into a separate integer within an array. If an integer with more or less than 16 digits is passed, an argument is raised. This is something we want to do <i>every</i> time the class is called, so it makes sense to put it in the <code>initialize</code> method.</p>
 			<p>Because the entire reason for <code>CreditCard</code> to exist is actually verifying that the input is a valid credit card, we'll have to create another method that contains the algorithm for verifying the number. Because we defined <code>@card_num</code> as an <i>instance variable</i>, we can call it in our new <code>check_card</code> method. It will end up looking like this (when place within the class):</p>
 			<p><div class="code"><code>
 				def check_card # Luhn algorithm
@@ -49,7 +49,7 @@
 			<p>Put it all together, and we have a <code>CreditCard</code> class that can be reused over and over within our Ruby program without repeating any of the actual code needed to verify a card number:
 			<p><code>card1 = CreditCard.new(4408041234567893)
 			card1
-			card1.check_card</code></p>
+			card1.check_card #=> true</code></p>
 		</div>
 		<!--<div class="ghr"></div>-->
 	</div>

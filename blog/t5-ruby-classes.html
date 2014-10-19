@@ -22,11 +22,9 @@
 			<p>Within the class, we can construct different methods to perform different functions when they are called upon. Take, for example, a class used to verify whether a credit card number is valid or not.</p>
 			<p>The actual algorithm to verify the number would be one method, but we would also want to take the user's input and make sure it's in a format usable to the program. For this, we would use the <code>initialize</code> method. The <code>initialize</code> method will run every time the class object is called. For our credit card program, our initialize method will look like this:</p>
 			<p><div class="code"><code>
-										class CreditCard
-										<p class="tab">def initialize(card_num)
-											<p class="tab"><span class="invis">-----</span>@card_num = card_num.to_s.split('').map { |x| x.to_i } # Turn each digit into element of an array.
-											<p class="tab"><span class="invis">-----</span>raise ArgumentError.new("Must 16 digits!") if @card_num.length != 16
-										<p class="tab">end
+										def initialize(card_num)
+											<p class="tab">@card_num = card_num.to_s.split('').map { |x| x.to_i } # Turn each digit into element of an array.
+											<p class="tab">raise ArgumentError.new("Must 16 digits!") if @card_num.length != 16
 										<br>end
 			</p></code></div>
 			<p>Each time a card number (a single integer with 16 digits) is called as an argument for <code>CreditCard</code>, it is run through logic to convert each digit into a separate integer within an array. If an integer with more or less than 16 digits is passed, an argument is raised.</p>

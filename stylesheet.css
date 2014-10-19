@@ -78,6 +78,7 @@ code, .code {
 	color: #000000;
 	font-weight: lighter;
 	margin: 0;
+	width: 80%;
 	padding-top: 0 6px 0 6px;
 }
 /* Tabs for code blocks */
@@ -88,6 +89,9 @@ code, .code {
 	font-weight: lighter;
 	margin: 0;
 	padding-top: 0 0 0 0;
+}
+.invis {
+	color: transparent;
 }
 
 /* This positions all the content between the header and footer */
@@ -205,7 +209,7 @@ footer {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	bottom: -40px;
+	bottom: -80px;
 	font-size: 12;
 	background-color: #13171a;
 	background: url(images/footer_background.png);

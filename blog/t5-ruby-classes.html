@@ -1,0 +1,64 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<title>Haven :: Blog :: Ruby Classes</title>
+</head>
+<body>
+	<!-- Begin Header -->
+	<header>
+		<br><a class="navigation" href="../index.html"><img class="header_logo" src="../images/header_logo.png" height="120" width="400" /></a>
+		<br><a class="navigation" href="../blog.html">Blog</a> - <a class="navigation" href="../projects.html">Projects</a> - <a class="navigation" href="../about.html">About</a>
+	</header>
+	<!-- End Header -->
+	<div class="backing"></div>
+	<div class="gwrap">
+		<h2><a class="h2" href="../blog.html">Back to Blog Index</a></h2>
+		<h1>Ruby Classes (Technical blog) <span class="date">10/18/2014</span></h1>
+		<div class="gcontent">
+			A <i>Class</i> is a 'blueprint' for building objects. For example, the built-in <i>Array</i> class tells Ruby how each array is constructed.
+			<p>Ruby has many built-in classes, but the language's real power lies in allowing the programmer to construct their own classes or even modify pre-existing classes.</p>
+			<p>The proper syntax for defining a class is:</p>
+			<p><div class="code"><code>def Class<br><br>end</code></div></p>
+			<p>Within the class, we can construct different methods to perform different functions when they are called upon. Take, for example, a class used to verify whether a credit card number is valid or not.</p>
+			<p>The actual algorithm to verify the number would be one method, but we would also want to take the user's input and make sure it's in a format usable to the program. For this, we would use the <code>initialize</code> method. The <code>initialize</code> method will run every time the class object is called. For our credit card program, our initialize method will look like this:</p>
+			<p><div class="code"><code>
+										class CreditCard
+										<p class="tab">def initialize(card_num)
+											<p class="tab"><span class="invis">-----</span>@card_num = card_num.to_s.split('').map { |x| x.to_i } # Turn each digit into element of an array.
+											<p class="tab"><span class="invis">-----</span>raise ArgumentError.new("Must 16 digits!") if @card_num.length != 16
+										<p class="tab">end
+										<br>end
+			</p></code></div>
+			<p>Each time a card number (a single integer with 16 digits) is called as an argument for <code>CreditCard</code>, it is run through logic to convert each digit into a separate integer within an array. If an integer with more or less than 16 digits is passed, an argument is raised.</p>
+			<p>Because the entire reason for <code>CreditCard</code> to exist is actually verifying that the input is a valid credit card, we'll have to create another method that contains the algorithm for verifying the number. Because we defined <code>@card_num</code> as an <i>instance variable</i>, we can call it in our new <code>check_card</code> method. It will end up looking like this (when place within the class):</p>
+			<p><div class="code"><code>
+				def check_card # Luhn algorithm
+				<p class="tab">	sum_of_digits = [] #  Manipulating this with the Luhn algorithm
+				<p class="tab">	@card_num.each_with_index do |num, index|
+				<p class="tab"><span class="invis">-----</span>if index % 2 == 0 # Double odd-indexed digits
+				<p class="tab"><span class="invis">----------</span>num *= 2
+				<p class="tab"><span class="invis">----------</span>sum_of_digits << num
+				<p class="tab"><span class="invis">-----</span>else
+				<p class="tab"><span class="invis">----------</span>sum_of_digits << num
+				<p class="tab"><span class="invis">-----</span>end
+				<p class="tab">	end
+				<p class="tab">	# Push elements together into a single string, then splits apart each digit again. So we can add "1+8" instead of "18".
+				<p class="tab">	sum_of_digits = sum_of_digits.to_s.split('') # "Mush" each digit in the array together into one unbroken number (which is still a string)
+				<p class="tab">	sum_of_digits = sum_of_digits.map { |x| x.to_i } # Turn each digit back into an single-digit integer
+				<p class="tab">	sum_of_digits.inject(:+) % 10 == 0 ? true : false # Add each digit together, check if it is a multiple of 10
+				<br>end
+			</p></code></div>
+			<p>Put it all together, and we have a <code>CreditCard</code> class that can be reused over and over within our Ruby program without repeating any of the actual code needed to verify a card number:
+			<p><code>card1 = CreditCard.new(4408041234567893)
+			card1
+			card1.check_card</code></p>
+		</div>
+		<!--<div class="ghr"></div>-->
+	</div>
+	<!-- Begin Footer -->
+	<footer>
+		<a href="mailto:nase00@gmail.com"><img  class="icon" alt="Email Placeholder" height="30" width="160" src="../images/email_icon.png" /></a> <a href="https://twitter.com/NaseZero"><img class="icon" alt="Twitter" height="30" width="30" src="../images/twitter_icon.png" /></a> <a href="https://github.com/Nase00"><img class="icon" alt="GitHub" height="30" width="30" src="../images/github_icon.png" /></a> <a alt="My YouTube channel" href="https://www.youtube.com/user/Atomic6/videos"><img class="icon" alt="YouTube" height="30" width="30" src="../images/youtube_icon.png" /></a>
+	</footer>
+	<!-- End Footer -->
+</body>
+</html>

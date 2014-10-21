@@ -128,7 +128,7 @@ code, .code {
 	color: #808080;
 	margin-top: 0%;
 	margin-bottom: 0%;
-	padding: 6px 6px 22px 24px;
+	padding: 6px 6px 62px 24px;
 	font-size: 14px;
 }
 .hLink {
@@ -209,7 +209,7 @@ footer {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	bottom: -80px;
+	bottom: -40px;
 	font-size: 12;
 	background-color: #13171a;
 	background: url(images/footer_background.png);

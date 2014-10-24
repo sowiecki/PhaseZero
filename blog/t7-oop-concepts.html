@@ -13,9 +13,28 @@
 	<div class="backing"></div>
 	<div class="gwrap">
 		<h2><a class="h2" href="../blog.html">Back to Blog Index</a></h2>
-		<h1>Work in progress (Technical blog) <span class="date">10/23/2014</span></h1>
+		<h1>Classes vs Modules (Technical blog) <span class="date">10/24/2014</span></h1>
 		<div class="gcontent">
-			Work in progress
+			In my previous technical blog post, I described what a Ruby class is, and what it's good for. Here, I will compare and constrast it to Ruby modules.
+			<p>As a refresher, a <i>Class</i> in Ruby is like a blueprint for building an object. Remember, everything in Ruby is an object, and classes are a way for us to create an object and reuse it over and over again without repeating the code. Also, remember that in Ruby, classes can only experience single-inheritence. That is, a class can only inherit from one other class, and they cannot be chained together.</p>
+			<p>Like classes, a <i>Module</i> allows us to reduce repetition in our code. Although it is technically an object, it's more helpful to think of it as "a part" that can be used for other objects (like classes). For example, if we had <code>class Automobile</code> and <code>class Wheelbarrow</code>, we could create modules to represent parts that both share (at least in the most basic design principle):
+			<div class="code"><code>module Wheel
+			<p class="tab">def move</p>
+			<p class="tab"><span class="invis">-----</span>puts "Rolls forward"</p>
+			<p class="tab">end</p>
+			end</code></div>
+			<p>We could then use this module within our automobile and wheelbarrow classes:
+			<div class="code"><code>class Automobile
+			<p class="tab">include Wheel</p>
+			end
+
+			<br><br>class Wheelbarrow
+			<p class="tab">include Wheel</p>
+			end
+
+			<br><br>Tesla_roadster = Automobile.new
+			<br>Tesla_roadster.move #=> Rolls forward</code></div>
+			<p>Our Wheel module allows us to define what a wheel is and use it in any class object that contains a wheel, without having to re-code the wheel over and over in a code! This would be messy and not really possible if Wheel was a class, and we wanted our Automobile class to inherit other pieces and parts.
 		</div>
 		<!--<div class="ghr"></div>-->
 	</div>

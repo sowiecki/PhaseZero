@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<title>Haven :: Blog :: JavaScript & Ruby - Differences in Looping</title>
+</head>
+<body>
+	<!-- Begin Header -->
+	<header>
+		<br><a class="navigation" href="../index.html"><img class="header_logo" src="../images/header_logo.png" height="120" width="400" /></a>
+		<br><a class="navigation" href="../blog.html">Blog</a> - <a class="navigation" href="../projects.html">Projects</a> - <a class="navigation" href="../about.html">About</a>
+	</header>
+	<!-- End Header -->
+	<div class="backing"></div>
+	<div class="gwrap">
+		<h2><a class="h2" href="../blog.html">Back to Blog Index</a></h2>
+		<h1>JavaScript & Ruby - Differences in Looping (Technical blog) <span class="date">10/24/2014</span></h1>
+		<div class="gcontent">
+			Loops are an excellent type of logic for automating repetative tasks. Fortunately, they are available in most programming languages in one or more forms. JavaScript and Ruby both support <code>for</code> and <code>while</code> loops, while Ruby additionally supports <code>each</code>, <code>times</code>, <code>upto</code>, <code>downto</code>, and <code>until</code>.
+			<p><code>while</code> loops, in <b>Ruby</b> work like so:
+			<div class="code"><code>puts x = 10
+			<br>while x > 0
+			<p class="tab">x -= 1
+			<p class="tab">puts x
+			end</code></div>
+			<p><code>while</code> loops, in <b>JavaScript</b> work similarly, but with some immediately noticable differences:
+			<div class="code"><code>var x = 10
+			<br>console.log(x)
+			<br>while (x > 0) {
+			<p class="tab">x -= 1;
+			<p class="tab">console.log(x);
+			}</code></div>
+			<p>Functionally, they are exactly the same. They both take the operation of "set the variable x equal to 10, substract 1 from it, display the new value of x, then repeat that over and over <i>while x is greater than 0</i>." If, for example, we had specified the loop to repeat "while x =< 10", the loop would continue forever, essentially causing the computer running it to lock up because while it is subtracting from x, x is <i>always</i> less than or equal to 10. This is called an infinite loop, and requires terminating the program or restarting the computer to terminate it.
+			<p>The only significant difference here is in syntax. Ruby makes it very easy to set a variable and display it on the console, all in one line, while JavaScript requires a bit more typing. First, the variable has to be <i>explicitly</i> defined with the <code>var</code> keyword. Then, it can only be displayed on the console by a completely separate statement.</p>
+			<p>JavaScript also requires that the <code>while</code> loop's conditional statement be encapsulated in ()'s, with the actual loop's operations are contained in {}'s. Lastly, each separate operation within the loop must end with a semi-colon. Personally, I prefer Ruby's syntax, as I think entering a new line <i>and</i> ending each statement with a semi-colon is redundant.</p>
+			<br><p>If you'd like to learn more about specific loops, here are some handy resources:</p>
+			<p><h3>Ruby Loops</h4>
+			<ul>
+				<li><a class="hLink" href="http://www.ruby-doc.org/docs/Tutorial/part_02/loops.html">Ruby Docs: Intro to loops</a></li>
+				<li><a class="hLink" href="http://www.ruby-doc.org/docs/Tutorial/part_02/while.html">Ruby Docs: While loops</a></li>
+				<li><a class="hLink" href="http://www.ruby-doc.org/docs/Tutorial/part_02/loops.html#counting">Ruby Docs: Counting (.times) loops</a></li>
+				<li><a class="hLink" href="http://www.tutorialspoint.com/ruby/ruby_loops.htm">Tutorialspoint: while, for, until, break, redo and retry</a></li>
+			</ul>
+		</div>
+		<!--<div class="ghr"></div>-->
+	</div>
+	<!-- Begin Footer -->
+	<footer>
+		<a href="mailto:nase00@gmail.com"><img  class="icon" alt="Email Placeholder" height="30" width="160" src="../images/email_icon.png" /></a> <a href="https://twitter.com/NaseZero"><img class="icon" alt="Twitter" height="30" width="30" src="../images/twitter_icon.png" /></a> <a href="https://github.com/Nase00"><img class="icon" alt="GitHub" height="30" width="30" src="../images/github_icon.png" /></a> <a alt="My YouTube channel" href="https://www.youtube.com/user/Atomic6/videos"><img class="icon" alt="YouTube" height="30" width="30" src="../images/youtube_icon.png" /></a>
+	</footer>
+	<!-- End Footer -->
+</body>
+</html>

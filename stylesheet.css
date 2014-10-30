@@ -181,7 +181,7 @@ h5, a.h5, a.h5:visited {
 
 /* General horizontal rule */
 .ghr {
-	margin-left: 0;
+	margin: -60px auto auto;
 	background-color: #FFFFFF;
 	border: 3px solid #cfcfcf;
 	margin: 0px auto;

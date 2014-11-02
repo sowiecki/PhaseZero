@@ -117,6 +117,8 @@ code, .code {
 	box-shadow: 0 0 0 6px #cfcfcf inset;
 }
 
+
+
 /* General content styling */
 .gcontent, a.gcontent, a.gcontent:visited{
 	text-decoration: none;
@@ -130,6 +132,28 @@ code, .code {
 	margin-bottom: 0%;
 	padding: 6px 6px 62px 24px;
 	font-size: 14px;
+}
+.cheatsheet_table, table {
+	border-collapse: collapse;
+
+	width: 80%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+th {
+	font-size: 18px;
+	padding: 2px 2px 2px 2px;
+	margin-bottom: 0px;
+	color: #808080;
+}
+td {
+	border: 2px solid gray;
+	padding: 10px 10px 10px 10px;
+}
+
+#credits {
+	padding-left: 10px;
+	font-size: 12px;
 }
 .hLink {
 	text-decoration: none;

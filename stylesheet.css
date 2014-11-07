@@ -120,7 +120,7 @@ code, .code {
 
 
 /* General content styling */
-.gcontent, a.gcontent, a.gcontent:visited{
+.gcontent, a.gcontent, a.gcontent:visited {
 	text-decoration: none;
 	font-family: sans-serif;
 	vertical-align: top;
@@ -132,6 +132,9 @@ code, .code {
 	margin-bottom: 0%;
 	padding: 6px 6px 62px 24px;
 	font-size: 14px;
+}
+.gimage {
+	margin: 0 40%;
 }
 .cheatsheet_table, table {
 	border-collapse: collapse;

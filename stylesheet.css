@@ -3,6 +3,14 @@ html {
 	margin-top: 200px;
 	position: static;
 }
+iframe {
+	margin-top: 0;
+	background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+    padding-top: 0;
+}
 
 #index {
 	margin-top: 12%;
@@ -240,7 +248,7 @@ footer {
 	font-size: 12;
 	background-color: #13171a;
 	background: url(images/footer_background.png);
-	padding: 8px 0 16px 0;
+	padding: 1px 0 25px 0;
 	width: 70%;
 	height: 50px;
 	border-radius: 30px;

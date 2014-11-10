@@ -4,12 +4,11 @@ html {
 	position: static;
 }
 iframe {
-	margin-top: 0;
+	margin: 0 auto;
 	background-color: transparent;
     border: 0px none transparent;
     padding: 0px;
     overflow: hidden;
-    padding-top: 0;
 }
 
 #index {

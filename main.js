@@ -21,5 +21,14 @@
 			for(var i = 0, elems = document.getElementsByTagName("header"); i < elems.length; i++) { elems[i].style.width = r1440; }
 			for(var i = 0, elems = document.getElementsByTagName("footer"); i < elems.length; i++) { elems[i].style.width = r1440; }
 		}
+		if (window.innerWidth <= 720) {
+			document.getElementById("display_mode").innerHTML = "Display mode: 720p";
+		}
+		else if (window.innerWidth <= 1080) {
+			document.getElementById("display_mode").innerHTML = "Display mode: 1080p";
+		}
+		else {
+			document.getElementById("display_mode").innerHTML = "Display mode: 1440p";
+		}
 	}
-}) ()
+}) ();

@@ -18,22 +18,8 @@
 			<p>I'm constantly making changes as I learn new things. I would really appreciate it if you'd like to <a class="hLink" href="https://github.com/Nase00/nase00.github.io">leave feedback</a>! Thanks!</p>
 			<div class="ghr"></div>
 			<p>As of 11/10/2014 I added a script to dynamically change various width properties based on the user's inner window size. So try resizing the window to see how it displays for you!</p>
-			<p><span id="display_mode" class="gcontent">Try resizing the window!</span></p>
-			<script>
-				//window.onload = displayMode
-				window.onresize = displayMode
-				function displayMode() {
-					if (window.innerWidth <= 720) {
-						document.getElementById("display_mode").innerHTML = "Display mode: 720p";
-					}
-					else if (window.innerWidth <= 1080) {
-						document.getElementById("display_mode").innerHTML = "Display mode: 1080p";
-					}
-					else {
-						document.getElementById("display_mode").innerHTML = "Display mode: 1440p";
-					}
-				}
-			</script>
+			<br><span id="display_mode">Try resizing the window!</span>
+			
 		</div>
 		<!--<div class="ghr"></div>-->
 	</div>

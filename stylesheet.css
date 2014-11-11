@@ -4,9 +4,7 @@ html {
 	position: static;
 }
 iframe {
-	margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	margin: 0 auto;
 	background-color: transparent;
     border: 0px none transparent;
     overflow: hidden;
@@ -65,6 +63,9 @@ header {
 
 /* Navigation within the header */
 a.navigation, a.navigation:visited {
+	margin-left: auto;
+   		margin-right: auto;
+   		margin: 0 auto;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -89,6 +90,8 @@ code, .code {
 	width: 80%;
 	padding-top: 0 6px 0 6px;
 }
+#display_mode {}
+
 /* Tabs for code blocks */
 .tab, blockquote {
 	text-indent:40px;

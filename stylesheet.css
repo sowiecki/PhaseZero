@@ -143,7 +143,10 @@ code, .code {
 	font-size: 14px;
 }
 .gimage {
-	margin: 0 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 10px 10px 10px;
 }
 .cheatsheet_table, table {
 	border-collapse: collapse;
